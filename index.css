@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'TT_NORMS_Pro';
+    src: url('fonts/TT\ Norms\ Pro\ Regular.otf');
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #201234;
+}
+ 
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Bakemono-Stereo-Bold-trial';
+    color: #FFC700;
+    font-size: 60px;
+}
+
+.subtitle {
+    font-family: 'TT_NORMS_Pro';
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-top: 60px;
+    width: 40%;
+}
+
+.groupsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.emptyContainer {
+    width: 44%;
+    border: 1px solid #584a65;
+    background-color: #2a183a;
+    height: 220px;
+    border-radius: 26px;
+}
+
+.groupsTokens {
+    width: 44%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.tokens {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.token {
+    width: 18%;
+    border: 1px solid #584a65;
+    background-color: #2a183a;
+    height: 120px;
+    border-radius: 14px;
+}
+
+.groupTitle {
+    font-family: 'TT_NORMS_Pro';
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 32px;
+    padding-bottom: 30px;
+}
+
+.tokenImg {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.tokenPercent {
+    font-family: 'TT_NORMS_Pro';
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+}
+
+.tokenName {
+    text-align: center;
+    font-family: 'TT_NORMS_Pro';
+    color: rgba(255, 255, 255, 0.45);    ;
+    font-size: 13px;
+}
+
