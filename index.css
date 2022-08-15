@@ -1,97 +1,298 @@
 @font-face {
-    font-family: 'TT_NORMS_Pro';
-    src: url('fonts/TT\ Norms\ Pro\ Regular.otf');
+  font-family: "TT_NORMS_Pro";
+  src: url("fonts/TT\ Norms\ Pro\ Regular.otf");
 }
 
-html, body {
-    margin: 0px;
-    padding: 0px;
-    background-color: #201234;
+@font-face {
+  font-family: "TT_NORMS_Pro_BOLD";
+  src: url("fonts/TT\ Norms\ Pro\ Bold.otf");
 }
- 
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #201234;
+  height: 200vh;
+}
+
 .wrapper {
-    width: 100vw;
-    height: 100vh;
-    max-width: 1240px;
-    margin: 0 auto;
+  width: 90vw;
+  height: 100vh;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 .title {
-    font-family: 'Bakemono-Stereo-Bold-trial';
-    color: #FFC700;
-    font-size: 60px;
+  font-family: "Bakemono-Stereo-Bold-trial";
+  color: #ffc700;
+  font-size: 60px;
 }
 
 .subtitle {
-    font-family: 'TT_NORMS_Pro';
-    color: #FFFFFF;
-    font-size: 18px;
-    margin-top: 60px;
-    width: 40%;
+  font-family: "TT_NORMS_Pro";
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 60px;
+  width: 40%;
 }
 
 .groupsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  justify-content: space-between;
 }
 
 .emptyContainer {
-    width: 44%;
-    border: 1px solid #584a65;
-    background-color: #2a183a;
-    height: 220px;
-    border-radius: 26px;
+  width: 44%;
+  border: 1px solid #584a65;
+  background-color: #2a183a;
+  height: 220px;
+  border-radius: 26px;
 }
 
 .groupsTokens {
-    width: 44%;
-    height: 220px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  width: 44%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .tokens {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .token {
-    width: 18%;
-    border: 1px solid #584a65;
-    background-color: #2a183a;
-    height: 120px;
-    border-radius: 14px;
+  width: 18%;
+  border: 1px solid #584a65;
+  background-color: #2a183a;
+  min-height: 120px;
+  border-radius: 14px;
 }
 
 .groupTitle {
-    font-family: 'TT_NORMS_Pro';
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 32px;
-    padding-bottom: 30px;
+  font-family: "TT_NORMS_Pro";
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 32px;
+  padding-bottom: 30px;
 }
 
 .tokenImg {
-    width: 80%;
-    margin: 0 auto;
-    display: block;
+  width: 80%;
+  margin: 5px auto 0px auto;
+  display: block;
 }
 
 .tokenPercent {
-    font-family: 'TT_NORMS_Pro';
-    color: #FFFFFF;
-    font-size: 16px;
-    text-align: center;
+  font-family: "TT_NORMS_Pro";
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
 }
 
 .tokenName {
-    text-align: center;
-    font-family: 'TT_NORMS_Pro';
-    color: rgba(255, 255, 255, 0.45);    ;
-    font-size: 13px;
+  text-align: center;
+  font-family: "TT_NORMS_Pro";
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 13px;
+  padding-bottom: 10px;
 }
 
+.rarityChecker {
+  width: 90%;
+  height: 240px;
+  background-color: #ffc700;
+  border-radius: 14px;
+  margin-top: 70px;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rarityCheckerTitleContainer,
+.rarityCheckerContentContainer {
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rarityCheckerTitleContainer {
+  display: flex;
+}
+
+.rarityCheckerContentContainer {
+}
+
+.rarityCheckerTitle {
+  font-family: "TT_NORMS_Pro_BOLD";
+  color: #000000;
+  font-size: 34px;
+}
+
+.rarityCheckerSubtitle {
+  font-family: "TT_NORMS_Pro";
+  color: #000000;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.rarityCheckerTitleHalf {
+  width: 50%;
+}
+
+.rarityCheckInputContainer {
+  border: 2px solid black;
+  color: black;
+  font-size: 32px;
+  font-family: "TT_NORMS_Pro_BOLD";
+  background-color: #ffc700;
+  width: 50%;
+  padding: 10px !important;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+.rarityCheckerInput {
+  border: none;
+  color: black;
+  font-size: 32px;
+  width: 60%;
+  font-family: "TT_NORMS_Pro_BOLD";
+  outline: none;
+  background-color: #ffc700;
+  display: inline;
+}
+
+.inputPrevalue {
+  display: inline;
+  margin-left: 10px;
+}
+
+.rarityCheckerBtn {
+  width: 58%;
+  height: 40px;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "TT_NORMS_Pro_BOLD";
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 20px auto 0px auto;
+}
+
+.rarityCheckerImg {
+  width: 28%;
+  border-radius: 12px;
+}
+
+.tokenInfoText {
+  font-family: "TT_NORMS_Pro";
+  padding: 2px 0px;
+}
+
+.tokenInfo {
+  width: 66%;
+}
+
+.traitTitle {
+  font-family: "TT_NORMS_Pro";
+  font-size: 12px;
+}
+
+.traitValue {
+  background-color: #e9b700;
+  border-radius: 20px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  font-family: "TT_NORMS_Pro";
+  font-size: 11px;
+}
+
+.tokenInfoText {
+  font-family: "TT_NORMS_Pro";
+  font-size: 14px;
+}
+
+.trait {
+  width: 22%;
+  margin-right: 3%;
+  margin-top: 8px;
+}
+
+.traits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.emoji {
+  width: 20px;
+  display: inline;
+}
+
+@media (max-device-width: 1070px) {
+  .rarityChecker {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .rarityCheckerContentContainer {
+    width: 100%;
+  }
+
+  .rarityCheckerTitleContainer {
+    width: 70%;
+    margin: 20px auto 0px auto;
+  }
+
+  .rarityCheckerContentContainer {
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-device-width: 990px) {
+  .emptyContainer,
+  .groupsTokens {
+    width: 100%;
+  }
+
+  .rarityCheckerTitleHalf {
+    width: 80%;
+  }
+
+  .token {
+    height: auto;
+  }
+
+  .groupsTokens {
+    height: auto;
+    padding: 40px 0px;
+  }
+}
+
+@media (max-device-width: 520px) {
+  .subtitle {
+    width: 100%;
+  }
+
+  .groupsTokens {
+    height: auto;
+    padding: 20px 0px;
+  }
+}
